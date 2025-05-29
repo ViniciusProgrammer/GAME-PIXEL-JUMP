@@ -747,7 +747,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23635626, y: -0.8381932, z: -34.38639}
+  m_LocalPosition: {x: 0.23635626, y: -0.65, z: -34.38639}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1070,6 +1070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeDoMenuInicial: Menu
   nomeDaProximaFase: Menu
+  nomeTelaGameOver: GameOver
   tempoParaRecarregarFase: 1
   tempoParaRecarregarNovaFase: 1
   timeText: {fileID: 1576747454}
