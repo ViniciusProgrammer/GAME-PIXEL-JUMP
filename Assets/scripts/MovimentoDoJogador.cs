@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovimentoDoJogador : MonoBehaviour
 {
-    [Header("Refer�ncias")]
+    [Header("Refer ncias")]
 
     private Rigidbody2D oRigidbody2D;
     private Animator oAnimator;
@@ -27,10 +27,10 @@ public class MovimentoDoJogador : MonoBehaviour
 
     public Transform verficadorDeParede;
 
-    [Header("Verifica��es")]
+    [Header("Verifica  es")]
     public bool jogadorEstaVivo;
 
-    
+
     void Awake()
     {
         oRigidbody2D = GetComponent<Rigidbody2D>();
@@ -46,7 +46,7 @@ public class MovimentoDoJogador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(jogadorEstaVivo == true)
+        if (jogadorEstaVivo == true)
         {
             movimentarJogador();
             Pular();
@@ -56,32 +56,32 @@ public class MovimentoDoJogador : MonoBehaviour
 
     private void movimentarJogador()
     {
-        //Cuida da movimenta��o horizontal do jogador
+        //Cuida da movimenta  o horizontal do jogador
 
         float movimentoHorizontal = Input.GetAxis("Horizontal");
 
         oRigidbody2D.linearVelocity = new Vector2(movimentoHorizontal * velocidadeDoJogador, oRigidbody2D.linearVelocity.y);
 
-        //Espelha o jogador dependendo da sua dire��o
+        //Espelha o jogador dependendo da sua dire  o
 
-        if(movimentoHorizontal > 0)
+        if (movimentoHorizontal > 0)
         {
             transform.localScale = new Vector3(1f, 1f, 1f);
             indoParaDireita = true;
         }
-        else if(movimentoHorizontal < 0)
+        else if (movimentoHorizontal < 0)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
             indoParaDireita = false;
         }
 
-        // Toca as anima��es do jogador  parado ou andando
+        // Toca as anima  es do jogador  parado ou andando
 
         if (movimentoHorizontal == 0 && estaNoChao == true)
         {
             oAnimator.Play("jogador-idle");
         }
-        else if(movimentoHorizontal != 0 && estaNoChao == true && estaNaParede == false)
+        else if (movimentoHorizontal != 0 && estaNoChao == true && estaNaParede == false)
         {
             oAnimator.Play("jogador-andando");
         }
@@ -89,7 +89,7 @@ public class MovimentoDoJogador : MonoBehaviour
 
     private void Pular()
     {
-        // Verifica se o jogador est� no encostando no ch�o 
+        // Verifica se o jogador esta no encostando no ch o 
 
         estaNoChao = Physics2D.OverlapCircle(verificadorDeChao.position, tamanhoDoRaioDeVerificacao, layerDoChao);
 
@@ -98,8 +98,10 @@ public class MovimentoDoJogador : MonoBehaviour
             FSXManager.instance.somDePulo.Play();
             oRigidbody2D.AddForce(new Vector2(0f, alturaDoPulo), ForceMode2D.Impulse);
         }
+        // Soltar o jump para o pulo
+        if (Input.GetButtonUp("Jump") && oRigidbody2D.linearVelocity.y > 0) oRigidbody2D.linearVelocity = new Vector2(oRigidbody2D.linearVelocity.x, (oRigidbody2D.linearVelocity.y * 0.5f));
 
-        // Toca a anima��o do jogador  pulando
+        // Toca a animacao do jogador  pulando
 
         if (estaNoChao == false && estaNaParede == false)
         {
@@ -114,34 +116,37 @@ public class MovimentoDoJogador : MonoBehaviour
 
         estaNaParede = Physics2D.OverlapCircle(verficadorDeParede.position, tamanhoDoRaioDeVerificacao, layerDoChao);
 
-        // Toca a anima��o do jogador deslizando na parede
+        // Toca a anima  o do jogador deslizando na parede
 
         if (estaNaParede == true && estaNoChao == false)
         {
-            oAnimator.Play("jogador-deslizando-na-parede"); 
+            oAnimator.Play("jogador-deslizando-na-parede");
         }
 
-        // Diz que o jogador esta na parede e est� pulando
+        // Diz que o jogador esta na parede e est  pulando
 
-        if(Input.GetButtonDown("Jump") && estaNaParede == true && estaNoChao == false)
+        if (Input.GetButtonDown("Jump") && estaNaParede == true && estaNoChao == false)
         {
             estaPulandoNaParede = true;
         }
+        // Soltar o jump para o pulo
+        if (Input.GetButtonUp("Jump") && oRigidbody2D.linearVelocity.y > 0) oRigidbody2D.linearVelocity = new Vector2(oRigidbody2D.linearVelocity.x, (oRigidbody2D.linearVelocity.y * 0.5f));
 
-        // Faz o jogador pular na parede e (ir em dire��o oposta a ela)
 
-        if(estaPulandoNaParede == true)
+        // Faz o jogador pular na parede e (ir em dire  o oposta a ela)
+
+        if (estaPulandoNaParede == true)
         {
-            if(indoParaDireita == true)
+            if (indoParaDireita == true)
             {
                 oRigidbody2D.linearVelocity = new Vector2(-forcaXDoWallJump, forcaYDoWallJump);
             }
             else
             {
-                oRigidbody2D.linearVelocity = new Vector2(forcaXDoWallJump, forcaYDoWallJump); 
+                oRigidbody2D.linearVelocity = new Vector2(forcaXDoWallJump, forcaYDoWallJump);
             }
 
-            // Diz para unity que o jogador saiu da parede (ap�s x segundos)
+            // Diz para unity que o jogador saiu da parede (ap s x segundos)
 
             Invoke(nameof(DeixarEstarPulandoNaParedeComoFalso), 0.1f);
         }
