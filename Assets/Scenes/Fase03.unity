@@ -7055,6 +7055,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3816183152829403252, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 3816183152829403252, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646422097789407598, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646422097789407598, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.09
+      objectReference: {fileID: 0}
     - target: {fileID: 7827586081062423941, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
       propertyPath: m_Name
       value: Passaro-Segurador (1)
