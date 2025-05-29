@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public string nomeDoMenuInicial;
     public string nomeDaProximaFase;
+
+    public string nomeTelaGameOver = "GameOver";
     public float tempoParaRecarregarFase;
     public float tempoParaRecarregarNovaFase;
 
@@ -50,7 +52,7 @@ public class GameManager : MonoBehaviour
             {
                 timeAux = 0f;
                 timeOver = true;
-                voltarAoMenu();
+                telaGameOver();
             }
 
             UpdateTimerDisplay();
@@ -102,5 +104,10 @@ public class GameManager : MonoBehaviour
         savedTimeAux = -1;
         yield return new WaitForSeconds(tempoParaRecarregarNovaFase);
         SceneManager.LoadScene(nomeDaProximaFase);
+    }
+
+    private void telaGameOver()
+    {
+        SceneManager.LoadScene(nomeTelaGameOver);
     }
 }

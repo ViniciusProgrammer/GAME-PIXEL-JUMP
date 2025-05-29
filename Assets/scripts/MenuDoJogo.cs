@@ -28,4 +28,9 @@ public class MenuDoJogo : MonoBehaviour
         Debug.Log("Saiu do Jogo");
         Application.Quit();
     }
+
+     public void menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }
