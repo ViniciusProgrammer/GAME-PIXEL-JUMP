@@ -1071,11 +1071,11 @@ MonoBehaviour:
   nomeDoMenuInicial: Menu
   nomeDaProximaFase: Menu
   tempoParaRecarregarFase: 1
+  tempoParaRecarregarNovaFase: 1
   timeText: {fileID: 1576747454}
   timeCount: 25.1
   timeAux: 0
   timeOver: 0
-  tempoParaRecarregarNovaFase: 1
 --- !u!4 &769817405
 Transform:
   m_ObjectHideFlags: 0
@@ -7046,13 +7046,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1699896211003089189, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699896211003089189, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7827586081062423941, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
       propertyPath: m_Name
       value: Passaro-Segurador (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8997182604626318788, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.37
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 8997182604626318788, guid: be154d058cc267145999cbe0698d7ac6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7329,7 +7337,7 @@ SpriteRenderer:
   m_SortingOrder: 10
   m_Sprite: {fileID: -7380623364372017665, guid: 4bc12dceb19fd024a89419d9052c896a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.22, y: 0.25}

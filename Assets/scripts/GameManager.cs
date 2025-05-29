@@ -99,6 +99,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator PassarDeFase()
     {
+        savedTimeAux = -1;
         yield return new WaitForSeconds(tempoParaRecarregarNovaFase);
         SceneManager.LoadScene(nomeDaProximaFase);
     }
