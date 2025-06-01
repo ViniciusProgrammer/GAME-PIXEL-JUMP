@@ -39,10 +39,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
-    }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             voltarAoMenu();
