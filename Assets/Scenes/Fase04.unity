@@ -1984,7 +1984,7 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   smoothSpeed: 0.125
   minX: 0.2
-  maxX: 45
+  maxX: 42
 --- !u!1001 &520720256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2646,7 +2646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeDoMenuInicial: Menu
-  nomeDaProximaFase: Menu
+  nomeDaProximaFase: Fase05
   nomeTelaGameOver: GameOver
   tempoParaRecarregarFase: 1
   tempoParaRecarregarNovaFase: 1
