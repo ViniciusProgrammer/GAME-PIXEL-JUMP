@@ -2356,7 +2356,7 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   smoothSpeed: 0.125
   minX: 0
-  maxX: 48
+  maxX: 38
 --- !u!1001 &550306900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16461,6 +16461,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 594493783}
     m_Modifications:
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5477408
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0000004172325
+      objectReference: {fileID: 0}
     - target: {fileID: 3134956317248821177, guid: a23f877b745391245b928c5e0dec359b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.71
@@ -19575,6 +19583,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 594493783}
     m_Modifications:
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.494901
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.025598675
+      objectReference: {fileID: 0}
     - target: {fileID: 3134956317248821177, guid: a23f877b745391245b928c5e0dec359b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.2
@@ -20465,6 +20481,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 594493783}
     m_Modifications:
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.561785
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00000008940697
+      objectReference: {fileID: 0}
     - target: {fileID: 3134956317248821177, guid: a23f877b745391245b928c5e0dec359b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.047884

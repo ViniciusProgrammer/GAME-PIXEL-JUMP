@@ -1556,6 +1556,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 831865044}
     m_Modifications:
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5117524
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.010811567
+      objectReference: {fileID: 0}
     - target: {fileID: 3134956317248821177, guid: a23f877b745391245b928c5e0dec359b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.13999939
@@ -3390,6 +3398,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 831865044}
     m_Modifications:
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5351102
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0000002682209
+      objectReference: {fileID: 0}
     - target: {fileID: 3134956317248821177, guid: a23f877b745391245b928c5e0dec359b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.17
@@ -16472,6 +16488,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 831865044}
     m_Modifications:
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5252023
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0049544275
+      objectReference: {fileID: 0}
     - target: {fileID: 3134956317248821177, guid: a23f877b745391245b928c5e0dec359b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.32
@@ -20158,6 +20182,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 831865044}
     m_Modifications:
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.45409
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969239829130854332, guid: a23f877b745391245b928c5e0dec359b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0036038756
+      objectReference: {fileID: 0}
     - target: {fileID: 3134956317248821177, guid: a23f877b745391245b928c5e0dec359b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.82
